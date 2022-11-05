@@ -1,0 +1,133 @@
+.MainPage {
+  display: flex;
+  justify-content: center;
+}
+
+.MainPage button:active {
+  transform: translateY(4px);
+}
+
+.Input_field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 220px;
+}
+
+.Input_field input {
+  height: 30px;
+  border-radius: 5px;
+}
+
+.Input_field button {
+  font-size: 17px;
+  letter-spacing: 1px;
+  height: 37px;
+  border-radius: 5px;
+  cursor: pointer;
+  background: #59c173; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #5d26c1,
+    #a17fe0,
+    #59c173
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #5d26c1,
+    #a17fe0,
+    #59c173
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.Room_container {
+  height: 200px;
+  width: 290px;
+  border: 1px solid #5d26c1;
+  overflow-y: scroll;
+  overflow-wrap: break-word;
+  padding: 10px;
+  background-color: rgb(35, 34, 34);
+  border-radius: 5px;
+  margin-bottom: 2px;
+}
+
+::-webkit-scrollbar {
+  background-color: #5d26c1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #59c173;
+  border-radius: 5px 0 0 5px;
+  box-shadow: inset 5px -5px 5px rgba(58, 114, 60, 1);
+}
+
+.el {
+  color: #59c173;
+}
+
+.Room_info h5:nth-child(1) {
+  margin: 10px 0px;
+  color: #a17fe0;
+}
+.Room_info h5:nth-child(2) {
+  margin: 10px 0px;
+  color: #59c173;
+}
+
+.Room_message {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.Room_message input {
+  width: 188px;
+  height: 30px;
+  border-radius: 5px;
+}
+
+.Room_message button {
+  height: 36px;
+  border-radius: 5px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  background: #59c173; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #5d26c1,
+    #a17fe0,
+    #59c173
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #5d26c1,
+    #a17fe0,
+    #59c173
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.Room_message button:active {
+  transform: translateY(4px);
+}
+
+@media only screen and (min-width: 440px) {
+  .Room_container {
+    width: 350px;
+  }
+  .Room_message input {
+    width: 245px;
+  }
+  .MainPage {
+    padding-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .Room_container {
+    width: 250px;
+  }
+  .Room_message input {
+    width: 145px;
+  }
+}
