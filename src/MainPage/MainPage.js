@@ -2,6 +2,7 @@ import "./MainPage.css";
 import { useEffect, useState } from "react";
 import io from "socket.io-client";
 import { v4 } from "uuid";
+import { Helmet } from "react-helmet";
 
 const PORT = 3001;
 const socket = io(`http://localhost:${PORT}`);
@@ -65,6 +66,12 @@ function MainPage() {
 
   return (
     <div className="MainPage">
+      <Helmet>
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+        />
+      </Helmet>
       {!chatIsVisible ? (
         <div className="Input_field">
           <input

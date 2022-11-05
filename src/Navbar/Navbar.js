@@ -1,10 +1,15 @@
+import { Helmet } from "react-helmet";
 import "./Navbar.css";
 
 function Navbar() {
   return (
     <div className="Navbar">
-      {/* <p>Fast</p>
-      <p>Chat</p> */}
+      <Helmet>
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+        />
+      </Helmet>
       <p aria-label="FastChat">
         <span data-text="F">F</span>
         <span data-text="A">A</span>
