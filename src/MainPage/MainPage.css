@@ -24,6 +24,8 @@
   letter-spacing: 1px;
   height: 37px;
   border-radius: 5px;
+  color: black !important;
+  border: 2px solid black;
   cursor: pointer;
   background: #59c173; /* fallback for old browsers */
   background: -webkit-linear-gradient(
@@ -90,6 +92,8 @@
 .Room_message button {
   height: 36px;
   border-radius: 5px;
+  color: black !important;
+  border: 2px solid black;
   cursor: pointer;
   letter-spacing: 1px;
   background: #59c173; /* fallback for old browsers */
