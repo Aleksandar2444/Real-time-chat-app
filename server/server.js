@@ -4,11 +4,12 @@ const { createServer } = require("http");
 const server = createServer(app);
 
 const { Server } = require("socket.io");
-const port = "https://fastapp-chatapp.herokuapp.com/";
+// const port = "https://fastapp-chatapp.herokuapp.com/";
+const port = process.env.PORT || 5000;
 
 const io = new Server(server, {
   cors: {
-    origin: "https://fastapp-chatapp.herokuapp.com/",
+    origin: "http://localhost:3000",
   },
 });
 

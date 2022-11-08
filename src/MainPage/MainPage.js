@@ -4,8 +4,9 @@ import io from "socket.io-client";
 import { v4 } from "uuid";
 import { Helmet } from "react-helmet";
 
-// const PORT = 3001;
-const socket = io(`https://fastapp-chatapp.herokuapp.com/`);
+const PORT = 5000;
+// const socket = io(`https://fastapp-chatapp.herokuapp.com/`);
+const socket = io(`http://localhost:${PORT}`);
 
 function MainPage() {
   const [isConnected, setIsConnected] = useState(socket.connected);
